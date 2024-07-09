@@ -6,7 +6,7 @@ let burgerButton = document.getElementById("burger-button");
 closeButton.addEventListener("click", () => {
   navMenu.classList.remove("nav-hide");
   burgerButton.style.opacity = 1;
-});
+});    
 
 burgerButton.addEventListener("click", () => {
   navMenu.classList.add("nav-hide");
