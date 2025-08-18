@@ -6,7 +6,7 @@ let burgerButton = document.getElementById("burger-button");
 closeButton.addEventListener("click", () => {
   navMenu.classList.remove("nav-hide");
   burgerButton.style.opacity = 1;
-});    
+});
 
 burgerButton.addEventListener("click", () => {
   navMenu.classList.add("nav-hide");
@@ -67,32 +67,60 @@ let projectContainer = document.querySelector(".project-cards");
 
 let projects = [
   {
-    image: "./assets/project-1.png",
-    title: "FITB Game",
-    subtitle: "E-Commerce Website",
-    githubLink: "https://github.com/itzjustfitb/FITB-Game.git",
-    liveView: "https://fitbgame.netlify.app/",
+    image: "./assets/CakeStore.png",
+    title: "Cake Store",
+    subtitle: "Cake Trading webite",
+    githubLink: "https://github.com/Elvinesgerov/Cake-Store.git",
+    liveView: "https://cake-store-psi.vercel.app/",
   },
   {
-    image: "./assets/project-2.png",
-    title: "FITB Calculator",
-    subtitle: "Calculator App",
-    githubLink: "https://github.com/itzjustfitb/Calculator-App.git",
-    liveView: "https://fitb-calculator.netlify.app/",
+    image: "./assets/MyFilm.png",
+    title: "My Film",
+    subtitle: "Film website",
+    githubLink: "https://github.com/Elvinesgerov/my-Film.git",
+    liveView: "https://my-film-mu.vercel.app/",
   },
   {
-    image: "./assets/project-3.png",
-    title: "NFT Marketplace",
-    subtitle: "Marketplace",
-    githubLink: "https://github.com/itzjustfitb/FITB-NFT-Marketplace",
-    liveView: "https://fitb-nft.netlify.app/",
+    image: "./assets/GithubFinder.png",
+    title: "GithubFinder",
+    subtitle: "GithubFinder website",
+    githubLink: "https://github.com/Elvinesgerov/GithubFinder.git",
+    liveView: "https://github-finder-five-gilt.vercel.app/",
   },
   {
-    image: "./assets/project-4.png",
-    title: "FITB NotePad",
-    subtitle: "TODO APP",
-    githubLink: "https://github.com/itzjustfitb/FITB-NFT-Marketplace",
-    liveView: "https://fitb-nft.netlify.app/",
+    image: "./assets/GameStore.png",
+    title: "GameStore",
+    subtitle: "GameStore Trading webite",
+    githubLink: "https://github.com/Elvinesgerov/Game-Store.git",
+    liveView: "https://game-store-three-pi.vercel.app/",
+  },
+  {
+    image: "./assets/calculyatorApp.png",
+    title: "Calculyator",
+    subtitle: "Calculyator App",
+    githubLink: "https://github.com/Elvinesgerov/Calculator-App.git",
+    liveView: "https://calculator-app-eight-alpha.vercel.app/",
+  },
+  {
+    image: "./assets/piozogen.png",
+    title: "Piozogen",
+    subtitle: "Piozogen website",
+    githubLink: "https://github.com/Elvinesgerov/Hakaton.git",
+    liveView: "https://hakaton-eight.vercel.app/",
+  },
+  {
+    image: "./assets/valyuta.png",
+    title: "Valyuta",
+    subtitle: "Valyuta App",
+    githubLink: "https://github.com/Elvinesgerov/Valyuta.git",
+    liveView: "https://valyuta-ochre.vercel.app/",
+  },
+  {
+    image: "./assets/TodoList.png",
+    title: "TodoList",
+    subtitle: "TodoList website",
+    githubLink: "https://github.com/Elvinesgerov/to-do-listt.git",
+    liveView: "https://to-do-listt-kohl.vercel.app/",
   },
 ];
 
@@ -108,6 +136,10 @@ function showCards(arr) {
           </div>
           <div class="project-links">
             <a target="_blank" href="${element.liveView}" class="project-link">
+              <i class="ri-eye-2-line"></i>
+              <p>View</p>
+            </a>
+            <a target="_blank" href="${element.githubLink}" class="project-link">
               <i class="ri-eye-2-line"></i>
               <p>View</p>
             </a>
@@ -180,7 +212,7 @@ function validateAnimation() {
   }, 1500);
 }
 
-function successAnimation() {}
+function successAnimation() { }
 
 function resetInputs() {
   inputName.value = "";
