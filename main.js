@@ -141,7 +141,7 @@ function showCards(arr) {
             </a>
             <a target="_blank" href="${element.githubLink}" class="project-link">
               <i class="ri-eye-2-line"></i>
-              <p>View</p>
+              <p>Github</p>
             </a>
           </div>
     `;
